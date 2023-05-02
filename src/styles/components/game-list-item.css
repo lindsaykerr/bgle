@@ -1,0 +1,33 @@
+.game-list-item {
+    margin: 10px 0;
+    border: 2px solid #ffffff;
+    background-color: rgb(70, 70, 70);
+    border-radius: 5px;
+    box-shadow: 0 0 8px #000000;
+    padding: 15px;
+}
+.game-list-item > button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    
+}
+
+.game-list-item .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.game-list-item .name {
+    color: rgb(228, 228, 228);
+    letter-spacing: .05em;
+    font-size: 1.1rem;
+    font-weight: normal;
+    width: 300px;
+    text-align: left;
+}

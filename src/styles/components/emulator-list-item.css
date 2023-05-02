@@ -1,0 +1,93 @@
+@import "../variables.css";
+
+.emulator  {
+    width: 650px;
+    margin: 20px auto;
+    border: 2px solid white;
+    background-color: rgb(70, 70, 70);
+
+    box-shadow: 0 0 8px #000000; 
+    border-radius: 5px;
+}
+.emulator.active {
+    border: none;
+    background-color: rgb(194, 194, 194);
+    box-shadow: none;
+}
+
+.emulator.active > button .name {
+    color: rgb(0, 0, 0);
+    
+}
+
+.emulator.active > button .game-count {
+    display: none;
+}
+.emulator.active > button .complete-percent .value {
+    text-shadow: -1px -1px 0 #222222, 1px -1px 0 #272727, -1px 1px 0 #252525, 1px 1px 0 #272727;
+}
+
+.emulator > button {
+    padding: 15px;
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: none;
+
+}
+.emulator > button .container {
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+
+}
+.emulator > button .name {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 300px;
+    text-align: left;
+    
+}
+.emulator > button .game-count {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #f0f0f0;
+    padding-top: 10px;
+    width: 100px;
+    text-align: right;
+}
+.emulator > button span.number {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.emulator > button .complete-percent {
+    padding-top: 10px;
+    width: 200px;
+    text-align: right;
+}
+
+.emulator > button .complete-percent .value {
+    font-size: 2rem ; 
+    text-align: left;
+}
+.emulator > button .complete-percent .sign {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+.emulator .alert {
+    text-align: center;
+}
+
+.emulator .spacer {
+    margin: 0 auto;
+    height: 2px;
+    width: 400px;
+    border-radius: 2px;
+    background-color: var(--dull);
+}

@@ -1,0 +1,45 @@
+@import "../variables.css";
+
+.half{
+    width: calc(var(--max-field-width) / 2);
+}
+
+.two-thirds {
+    width: calc(var(--max-field-width) / 1.5);
+}
+
+.one-third {
+    width: calc(var(--max-field-width) / 3);
+}
+
+.full {
+    width: var(--max-field-width);
+}
+.quarter {
+    width: calc(var(--max-field-width) / 4);
+ 
+}
+.eighth {
+    width: calc(var(--max-field-width) /8 );
+}
+
+input {
+    display: inline-block;
+    padding: 3px;
+    font-size: 1em;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field label, textarea {
+    font-size: .9em;
+}
+
+.field textarea {
+    min-width: var(--max-field-width);
+    resize: vertical;
+    min-height: 150px; 
+    max-height: 400px;
+}
